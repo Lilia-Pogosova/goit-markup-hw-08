@@ -1,6 +1,8 @@
 .klients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    
 }
 
 .klients-title {
@@ -18,9 +20,28 @@
 
 .klients-list {
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     gap: 30px;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+            flex-basis: calc((100% - 30px) / 2);
+            
+        }
+    
+        @media screen and (min-width: 768px) {
+    
+            flex-basis: calc((100% - 60px) / 3);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 150px) / 6);
+            
+            
+    
+        }
 }
 
 
@@ -44,6 +65,7 @@
             border: 1px solid #2196F3;
         }
 
+
 }
 
 .klients-icon {
@@ -56,4 +78,6 @@
         .klients-link:focus &{
             fill: #2196F3;
         }
+
+        
 }
