@@ -1,0 +1,150 @@
+.nav {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    cursor: pointer;
+    margin-right: 318px;
+
+}
+
+.list-studio,
+.list-portfolio {
+    margin-right: 50px;
+}
+
+
+
+.nav>li>a {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding-bottom: 33px;
+    position: relative;
+
+        &:hover {
+                color: #2196F3;
+            }
+}
+
+
+
+
+
+.item-nav::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+
+}
+
+
+
+.mail {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+                color: #2196F3;
+        
+            }
+
+
+}
+
+
+
+
+
+.mail-icon {
+    margin-right: 10px;
+    fill: #757575;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        .mail:hover &,
+        .mail:focus & {
+                fill: #2196F3;
+        
+            }
+
+}
+
+.tel-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        .tel:hover &,
+        .tel:focus & {
+                fill: #2196F3;
+        
+            }
+
+}
+
+
+
+.header-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.tel {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+            &:focus {
+                color: #2196F3;
+        
+            }
+
+}
+
+
+

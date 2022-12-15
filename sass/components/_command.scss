@@ -1,0 +1,54 @@
+.command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #F5F4FA;
+
+}
+
+
+
+
+.command-title {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+
+}
+
+.list-command {
+
+    display: flex;
+    align-content: center;
+    >li {
+            margin-right: 30px;
+        }
+}
+
+
+
+.command-members {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.command-position {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-bottom: 16px;
+}

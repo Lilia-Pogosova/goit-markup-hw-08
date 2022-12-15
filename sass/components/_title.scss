@@ -1,0 +1,25 @@
+.title {
+    background: #2F303A;
+    padding: 200px 0 200px 0;
+    background-image:
+        linear-gradient(to right, rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/img_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.title-site {
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: white;
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}

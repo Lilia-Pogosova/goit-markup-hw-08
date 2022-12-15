@@ -1,0 +1,29 @@
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+
+}
+
+.conteiner-header {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.logo-header {
+    color: #2196F3;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    margin-right: 93px;
+
+}
+
+.logo-type-header {
+    color: black
+}

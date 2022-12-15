@@ -1,0 +1,37 @@
+@import './utils/mixins';
+@import './base/common';
+@import './base/reset';
+
+
+@import './components/header';
+@import './components/nav';
+@import './components/title';
+@import './components/conteiner';
+@import './components/button';
+@import './components/qualities';
+
+@import './components/trade';
+@import './components/galery-trade';
+@import './components/label-trade';
+
+@import './components/command';
+@import './components/card-command';
+
+@import './components/klients';
+
+@import './components/logo-footer';
+@import './components/footer';
+@import './components/footer-nav';
+@import './components/footer-icons';
+@import './components/form-footer';
+
+@import './components/portfolio-buttons';
+@import './components/portfolio-content';
+@import './components/box-portfolio';
+
+@import './components/backdrop';
+@import './components/modal';
+@import './components/close-modal';
+@import './components/checkbox';
+@import './components/button-modal';
+
