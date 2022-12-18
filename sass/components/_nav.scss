@@ -9,13 +9,25 @@
     letter-spacing: 0.02em;
     color: #212121;
     cursor: pointer;
-    margin-right: 318px;
+    margin-right: 315px;
+
+@media screen and (min-width: 480px) {
+    display: none;}
+
+@media screen and (min-width: 768px) {
+    display: -webkit-box;
+    margin-right: 90px;
+    
+}
+@media screen and (min-width: 1200px) {
+margin-right: 290px;}
 
 }
 
 .list-studio,
 .list-portfolio {
     margin-right: 50px;
+    
 }
 
 
@@ -30,12 +42,13 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    padding-bottom: 33px;
+    padding-bottom: 25px;
     position: relative;
 
-        &:hover {
-                color: #2196F3;
-            }
+    &:hover {
+        color: #2196F3;
+    }
+       
 }
 
 
@@ -51,8 +64,16 @@
     background-color: #2196F3;
     border-radius: 2px;
     left: 0;
-    bottom: -1px;
+    
 
+    @media screen and (min-width: 768px) {
+       
+bottom: -6px;
+    }
+
+    @media screen and (min-width: 1200px) {
+bottom: -2px;
+    }
 }
 
 
@@ -71,11 +92,24 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover,
-        &:focus {
-                color: #2196F3;
-        
-            }
+    &:hover,
+    &:focus {
+        color: #2196F3;
+
+    }
+@media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+    
+}
+
+
+@media screen and (min-width: 1200px) {
+    font-size: 14px;
+        line-height: 16px;
+}
+
 
 
 }
@@ -91,11 +125,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        .mail:hover &,
-        .mail:focus & {
-                fill: #2196F3;
-        
-            }
+    .mail:hover &,
+    .mail:focus & {
+        fill: #2196F3;
+
+    }
 
 }
 
@@ -106,20 +140,46 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        .tel:hover &,
-        .tel:focus & {
-                fill: #2196F3;
-        
-            }
+    .tel:hover &,
+    .tel:focus & {
+        fill: #2196F3;
+
+    }
 
 }
 
+.header-information{
+    
 
+}
 
 .header-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      
+    @media screen and (min-width: 480px) {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        display: none;
+        }
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+            margin-left: auto;
+            flex-direction: column;
+            padding-top: 21px;
+            padding-bottom: 21px;
+            gap: 10px;
+            
+        }
+    
+        @media screen and (min-width: 1200px) {
+                    list-style: none;
+                    display: -webkit-box;
+                    flex-direction: row;
+                    margin-left: auto;
+                    
+                    align-items: center;
+        }
 
 }
 
@@ -138,13 +198,21 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover,
-            &:focus {
-                color: #2196F3;
-        
-            }
+    &:hover,
+    &:focus {
+        color: #2196F3;
 
+    }
+@media screen and (min-width: 768px) {
+    
+        font-size: 12px;
+        line-height: 14px;
+
+}
+@media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 16px;
 }
 
 
-
+}

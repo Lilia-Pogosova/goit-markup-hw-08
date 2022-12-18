@@ -28,18 +28,17 @@
 
     @media screen and (min-width: 480px) {
             flex-basis: calc((100% - 30px) / 2);
-            
         }
     
         @media screen and (min-width: 768px) {
     
             flex-basis: calc((100% - 60px) / 3);
+
         }
     
         @media screen and (min-width: 1200px) {
             flex-basis: calc((100% - 150px) / 6);
-            
-            
+
     
         }
 }
@@ -54,7 +53,6 @@
     justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    width: 170px;
     height: 92px;
     transition-property: border;
     transition-duration: 250ms;
@@ -64,8 +62,13 @@
         &:focus {
             border: 1px solid #2196F3;
         }
-
-
+@media screen and (min-width: 480px) {
+    width: 190px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 216px;}
+@media screen and (min-width: 1200px) {
+width: 170px;}
 }
 
 .klients-icon {
