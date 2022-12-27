@@ -166,16 +166,12 @@ ul li {
   color: black;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-
-.mob-menu {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffffff;
-  top: 0;
+.conteiner-mob {
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,53 +182,6 @@ ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.menu-close {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0);
-  top: 10px;
-  right: 15px;
-  margin-bottom: 10px;
-}
-.menu-close:hover, .menu-close:focus, .menu-close:active {
-  fill: #2196F3;
-}
-
-.conteiner-mob {
-  width: 100%;
-  max-width: 100%;
-  padding: 0 15px;
-  max-width: 450px;
-  max-height: 796px;
-  position: relative;
-  position: fixed;
-  padding-top: 48px;
-  padding-left: 40px;
-}
-
-.menu-nav {
-  display: block;
-}
-
-.list-studio-menu {
-  margin-bottom: 32px;
-}
-
-.item-nav-menu {
-  margin-bottom: 32px;
-}
-
-.list-portfolio-menu {
-  margin-bottom: 32px;
-}
-
-.list-contact-menu {
-  margin-bottom: 306px;
-}
-
-.menu-contacts {
-  margin-bottom: 32px;
 }
 
 .nav {
@@ -305,12 +254,12 @@ ul li {
 }
 @media screen and (min-width: 768px) {
   .item-nav::after {
-    bottom: -6px;
+    bottom: -8px;
   }
 }
 @media screen and (min-width: 1200px) {
   .item-nav::after {
-    bottom: -2px;
+    bottom: -1px;
   }
 }
 
@@ -1012,7 +961,6 @@ ul li {
 }
 
 .footer {
-  padding-bottom: 60px;
   padding-top: 60px;
   background: #2F303A;
   display: block;
@@ -1063,6 +1011,7 @@ ul li {
 @media screen and (min-width: 1200px) {
   .conteiner-footer {
     max-width: 1200px;
+    max-height: 252px;
     margin: 0 auto;
     padding: 0 15px;
     display: -webkit-box;

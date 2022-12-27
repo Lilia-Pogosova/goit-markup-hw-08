@@ -16,7 +16,7 @@
     
 </head>
 
-<body class="body">
+<body class="body no-scroll">
     <!-- Header content -->
   
     <header class="header">
@@ -54,44 +54,51 @@
               </ul>
             </div>
 
-          <button type="button" class="menu-open" data-menu-open>
+            <!-- --------mob--------- -->
+
+          <button type="button" class="menu-open is-hidden " data-menu-open>
             <svg class="menu-open-icon" width="24" height="16">
               <use href="./images/menu-open.svg#icon-menu_svg"></use>
             </svg>
           </button>
         </div>
       
-        <!-- --------mob--------- -->
-      <div class="mob-menu  is-hidden no-scroll"  data-menu>
-        <button type="button" class="menu-close" data-menu-close>
-          <svg class="menu-close-icon" width="18" height="18">
-            <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
-          </svg>
-        </button>
-        <div class="conteiner-mob no-scroll">
+      
+        <div class="mob-menu is-hidden"  data-menu>
+          <button type="button" class="menu-close" data-menu-close>
+            <svg class="menu-close-icon" width="18" height="18">
+              <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <div class="conteiner-mob no-scroll">
+          
         
-
-          <ul class="menu-nav">
-            <li class="list-studio-menu"><a class="item-nav-menu" href="./index.html">Студія</a></li>
-            <li class="list-portfolio-menu"><a href="./portfolio.html">Портфоліо</a></li>
-            <li class="list-contact-menu"><a href="/">Контакти</a></li>
-          </ul>
-
-          <ul class="menu-contacts">
-            <li><a class="mail-menu" href="mailto:info@devstudio.com">info@devstudio.com</a></li>            
-            <li><a class="tel-menu" href="tel:+380961111111">+38 096 111 11 11</a></li>            
-          </ul>
-
-          <ul class="menu-soc">
-            <li><a class="inst-mob" href="https://www.instagram.com/">Instagram</a></li>
-            <li><a class="tw-mob" href="https://twitter.com/">Twitter</a></li>
-            <li><a class="facebook-mob" href="https://www.facebook.com/">Facebook</a></li>
-            <li><a class="in-mob" href="https://www.linkedin.com/">LinkedIn</a></li>
-          </ul>
-
-      </div>  
-        </div>
-
+            <div class="top-menu">
+              <ul class="menu-nav">
+                <li class="list-studio-menu"><a class="item-nav-menu" href="./index.html">Студія</a></li>
+                <li class="list-portfolio-menu"><a href="./portfolio.html">Портфоліо</a></li>
+                <li class="list-contact-menu"><a href="/">Контакти</a></li>
+              </ul>
+            </div>
+        
+            <div class="bottom-menu">
+              <ul class="menu-contacts">
+                <li><a class="mail-menu" href="mailto:info@devstudio.com">info@devstudio.com</a></li>            
+                <li><a class="tel-menu" href="tel:+380961111111">+38 096 111 11 11</a></li>            
+              </ul>
+              
+              <ul class="menu-soc">
+                <li><a class="inst-mob" href="https://www.instagram.com/">Instagram</a></li>
+                <li><a class="tw-mob" href="https://twitter.com/">Twitter</a></li>
+                <li><a class="facebook-mob" href="https://www.facebook.com/">Facebook</a></li>
+                <li><a class="in-mob" href="https://www.linkedin.com/">LinkedIn</a></li>
+              </ul>
+            </div>
+        
+        </div>  
+          </div>
+        
+      
 
 
     </header>
@@ -104,8 +111,8 @@
                 <h1 class="title-site">Ефективні рішення для вашого бізнесу</h1>
             
             <!-------------- MODAL------------>
-                <button data-modal-open class="button" type="button"><span class="button-txt">Замовити послугу</span></button>
-                <div data-modal class="backdrop is-hidden " >
+                <button data-modal-open class="button " type="button"><span class="button-txt">Замовити послугу</span></button>
+                <div data-modal class="backdrop is-hidden" >
                   <div class="modal">
 
                     <button data-modal-close class="btn-close">
@@ -149,6 +156,7 @@
                         
                         <div class="form-field">
                           <label for="comment" class="form-label">Коментар</label>
+                          <input type="comment" name="comment" id="comment" />
                             <textarea name="comment" class="input-l" rows="6" placeholder="Введіть текст"></textarea>
                         </div>
                       

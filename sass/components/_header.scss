@@ -80,70 +80,46 @@ justify-content: space-between;
 
 
 // mob-menu--------------------------//
-.no-scroll{overflow: hidden;}
-.mob-menu{
-position: fixed;
-width: 100vw;
-height: 100vh;
-background-color: #ffffff;
-top: 0;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
 
-
-
-.menu-close {
-    position: absolute;
-        background-color: rgba(0, 0, 0, 0);
-    top: 10px;
-    right: 15px;
-
-    &:hover,
-    &:focus,
-    &:active{
-        fill: #2196F3;
+.mob-menu {
     }
 
- margin-bottom: 10px;
+
+.is-hidden {}
+
+.menu-close {}
+
+.menu-close-icon {}
+
+.conteiner-mob {
+        min-width: 320px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+
+        height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 }
 
+.no-scroll {}
 
+.top-menu {}
 
-.conteiner-mob{
-    width: 100%;
-    max-width: 100%;
-        padding: 0 15px;
-    
-        
-            max-width: 450px;
-            max-height: 796px;
-            position: relative;
-            position: fixed;
-            padding-top: 48px;
-            padding-left: 40px;
-    
+.menu-nav {}
 
-    
-        
-    }
+.list-studio-menu {}
 
-.menu-nav {
-    display: block;
-}
+.item-nav-menu {}
 
-.list-studio-menu {
-    margin-bottom: 32px;
-}
+.list-portfolio-menu {}
 
-.item-nav-menu {margin-bottom: 32px;}
+.list-contact-menu {}
 
-.list-portfolio-menu {margin-bottom: 32px;}
+.bottom-menu {}
 
-.list-contact-menu { margin-bottom: 306px;}
-
-.menu-contacts {margin-bottom: 32px;}
+.menu-contacts {}
 
 .mail-menu {}
 

@@ -1,5 +1,5 @@
 .footer {
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
     padding-top: 60px;
     background: #2F303A;
     display: block;
@@ -36,6 +36,7 @@
         
             @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    max-height: 252px;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
