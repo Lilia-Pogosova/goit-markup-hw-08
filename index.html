@@ -27,7 +27,7 @@
             <a  class="logo-header" href="#">Web<span class="logo-type-header">Studio</span></a>
 
             <ul class="nav">
-                <li class="list-studio"><a class="item-nav" href="./index.html">Студія</a></li>
+                <li class="list-studio"><a href="./index.html" class="item-nav">Студія</a></li>
                 <li class="list-portfolio"><a href="./portfolio.html">Портфоліо</a></li>
                 <li class="list-contact"><a href="/">Контакти</a></li>
             </ul>
@@ -56,7 +56,7 @@
 
             <!-- --------mob--------- -->
 
-          <button type="button" class="menu-open is-hidden " data-menu-open>
+          <button type="button" class="menu-open" data-menu-open>
             <svg class="menu-open-icon" width="24" height="16">
               <use href="./images/menu-open.svg#icon-menu_svg"></use>
             </svg>
@@ -64,39 +64,7 @@
         </div>
       
       
-        <div class="mob-menu is-hidden"  data-menu>
-          <button type="button" class="menu-close" data-menu-close>
-            <svg class="menu-close-icon" width="18" height="18">
-              <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
-            </svg>
-          </button>
-          <div class="conteiner-mob no-scroll">
-          
-        
-            <div class="top-menu">
-              <ul class="menu-nav">
-                <li class="list-studio-menu"><a class="item-nav-menu" href="./index.html">Студія</a></li>
-                <li class="list-portfolio-menu"><a href="./portfolio.html">Портфоліо</a></li>
-                <li class="list-contact-menu"><a href="/">Контакти</a></li>
-              </ul>
-            </div>
-        
-            <div class="bottom-menu">
-              <ul class="menu-contacts">
-                <li><a class="mail-menu" href="mailto:info@devstudio.com">info@devstudio.com</a></li>            
-                <li><a class="tel-menu" href="tel:+380961111111">+38 096 111 11 11</a></li>            
-              </ul>
-              
-              <ul class="menu-soc">
-                <li><a class="inst-mob" href="https://www.instagram.com/">Instagram</a></li>
-                <li><a class="tw-mob" href="https://twitter.com/">Twitter</a></li>
-                <li><a class="facebook-mob" href="https://www.facebook.com/">Facebook</a></li>
-                <li><a class="in-mob" href="https://www.linkedin.com/">LinkedIn</a></li>
-              </ul>
-            </div>
-        
-        </div>  
-          </div>
+
         
       
 
@@ -110,74 +78,9 @@
         <div class="conteiner-title">
                 <h1 class="title-site">Ефективні рішення для вашого бізнесу</h1>
             
-            <!-------------- MODAL------------>
+            <!-------------- MODAL btn------------>
                 <button data-modal-open class="button " type="button"><span class="button-txt">Замовити послугу</span></button>
-                <div data-modal class="backdrop is-hidden" >
-                  <div class="modal">
-
-                    <button data-modal-close class="btn-close">
-                      <svg  class="close" width="18" height="18">
-                      <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
-                    </svg>
-                    </button>
-
-                    <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>                    
-
-                    <form class="box-form">
-                        <div class="form-field">
-                          
-                          <label for="name" class="form-label">Ім'я</label>
-                          <input type="name" class="form-input" name="username" id="name"/>
-                          <svg class="form-field-icon" width="18" height="18">
-                            <use href="./images/symbol-defs .svg#icon-person"></use>
-                          </svg>
-                          
-                        </div>
-                        
-                        <div class="form-field">
-                          
-                          <label for="tel" class="form-label">Телефон</label>
-                          <input type="tel" class="form-input" name="phone_namber" id="tel" />
-                          <svg class="form-field-icon" width="18" height="18">
-                            <use href="./images/symbol-defs .svg#icon-phone"></use>
-                          </svg>
-                          
-                        </div>
-                        
-                        <div class="form-field"> 
-                          
-                          <label for="E-mail" class="form-label">Пошта</label>
-                          <input type="email" class="form-input" name="email" id="e-mail" />
-                          <svg class="form-field-icon" width="18" height="18">
-                            <use href="./images/symbol-defs .svg#icon-email"></use>
-                          </svg>
-                          
-                        </div>
-                        
-                        <div class="form-field">
-                          <label for="comment" class="form-label">Коментар</label>
-                          <input type="comment" name="comment" id="comment" />
-                            <textarea name="comment" class="input-l" rows="6" placeholder="Введіть текст"></textarea>
-                        </div>
-                      
-
-
-                      <div class="modal-conditions">
-                        <label class="modal-form-txt">
-                          <input class="checkbox" type="checkbox" name="agree" />
-                          <span class="check__box">
-                            <svg class="check__box_b" width="16" height="15">
-                              <use href="./images/symbol-defs .svg#icon-checkbox-unchecked"></use>
-                            </svg>
-                          </span>
-                          Погоджуюся з розсилкою та приймаю <span class="conditions">Умови договору</span>
-                        </label>
-                      </div>
-
-                      <button class="button-modal" type="submit"><span class="button-modal-form-txt">Відправити</span></button>
-                    </form>
-                  </div>
-                </div>
+                
         </div>
         </section>
         <!--Особливості-->
@@ -605,6 +508,112 @@
             </div>
         </div>
     </footer>
+
+    <!-- mob -->
+            <div class="mob-menu is-hidden" data-menu>
+              <button type="button" class="menu-close" data-menu-close>
+                <svg class="menu-close-icon" width="40" height="40">
+                  <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+              </button>
+            
+              <div class="conteiner-mob no-scroll">
+            
+            
+                <div class="top-menu">
+                  <ul class="menu-nav">
+                    <li class="list-studio-menu"><a class="item-nav-menu" href="./index.html">Студія</a></li>
+                    <li class="list-portfolio-menu"><a class="item-nav-menu" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="list-contact-menu"><a class="item-nav-menu" href="/">Контакти</a></li>
+                  </ul>
+                </div>
+            
+                <div class="bottom-menu">
+                  <ul class="menu-contacts">
+                    <li><a class="tel-menu" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li><a class="mail-menu" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    
+                  </ul>
+            
+                  <ul class="menu-soc">
+                    <li><a class="inst-mob" href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a class="tw-mob" href="https://twitter.com/">Twitter</a></li>
+                    <li><a class="facebook-mob" href="https://www.facebook.com/">Facebook</a></li>
+                    <li class="none"><a class="in-mob" href="https://www.linkedin.com/">LinkedIn</a></li>
+                  </ul>
+                </div>
+            
+              </div>
+            </div>
+    
+    <!-- MODAL -->
+    
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+    
+        <button data-modal-close class="btn-close">
+          <svg class="close" width="18" height="18">
+            <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+    
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+    
+        <form class="box-form">
+          <div class="form-field">
+    
+            <label for="name" class="form-label">Ім'я</label>
+            <input type="name" class="form-input" name="username" id="name" />
+            <svg class="form-field-icon" width="18" height="18">
+              <use href="./images/symbol-defs .svg#icon-person"></use>
+            </svg>
+    
+          </div>
+    
+          <div class="form-field">
+    
+            <label for="tel" class="form-label">Телефон</label>
+            <input type="tel" class="form-input" name="phone_namber" id="tel" />
+            <svg class="form-field-icon" width="18" height="18">
+              <use href="./images/symbol-defs .svg#icon-phone"></use>
+            </svg>
+    
+          </div>
+    
+          <div class="form-field">
+    
+            <label for="E-mail" class="form-label">Пошта</label>
+            <input type="email" class="form-input" name="email" id="e-mail" />
+            <svg class="form-field-icon" width="18" height="18">
+              <use href="./images/symbol-defs .svg#icon-email"></use>
+            </svg>
+    
+          </div>
+    
+          <div class="form-field">
+            <label for="comment" class="form-label">Коментар</label>
+            <textarea name="comment" class="input-l" rows="6" placeholder="Введіть текст"></textarea>
+          </div>
+    
+    
+    
+          <div class="modal-conditions">
+            <label class="modal-form-txt">
+              <input class="checkbox" type="checkbox" name="agree" />
+              <span class="check__box">
+                <svg class="check__box_b" width="16" height="15">
+                  <use href="./images/symbol-defs .svg#icon-checkbox-unchecked"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю 
+              <a class="conditions" href="#">Умови договору</a>
+            </label>
+          </div>
+    
+          <button class="button-modal" type="submit"><span class="button-modal-form-txt">Відправити</span></button>
+        </form>
+      </div>
+    </div>
   <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>
 </body>

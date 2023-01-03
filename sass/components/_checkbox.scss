@@ -1,12 +1,11 @@
 .checkbox {
     margin-top: 4px;
     margin-right: 7px;
-    width: 16px;
-    height: 15px;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     display: flex;
+
 
 }
 
@@ -23,6 +22,18 @@
         
         
             }
+
+                        @media screen and (min-width: 480px) {
+                           margin-top: 0px;
+                        }
+            
+                        @media screen and (min-width: 768px) {}
+            
+                        @media screen and (min-width: 1200px) {
+                            margin-top: 4px;
+
+                        }
+
 }
 
 

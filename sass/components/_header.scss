@@ -81,56 +81,186 @@ justify-content: space-between;
 
 // mob-menu--------------------------//
 
+
+.menu-open{
+    @media screen and (min-width: 480px) {
+    display: block; 
+    background-color: #ffffff; 
+        }
+    
+        @media screen and (min-width: 768px) {
+        display: none;
+        }
+    
+        @media screen and (min-width: 1200px) {
+        display: none;
+        }
+}
 .mob-menu {
+    display: block;
+
+    // transform: translate(100%, 100%);
+       
+            position: relative;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            background-color: #fff;
+            padding-left: 40px;
     }
 
 
-.is-hidden {}
-
-.menu-close {}
-
-.menu-close-icon {}
-
-.conteiner-mob {
-        min-width: 320px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0 auto;
-
-        height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+.is-hidden {
+    display: none;
 }
 
-.no-scroll {}
+.menu-close {
+    background-color: white;
+    position: absolute;
+    top: 10px;right: 15px;
+    
+}
 
-.top-menu {}
+.menu-close-icon {
+    padding: 10px;
+    fill: #212121;
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+            fill: #2196F3;
+        }
+}
 
-.menu-nav {}
+.conteiner-mob {
+        
+}
 
-.list-studio-menu {}
 
-.item-nav-menu {}
 
-.list-portfolio-menu {}
+.top-menu {
+    margin-bottom: 302px;
+    
+}
+
+.menu-nav {
+    
+}
+
+.list-studio-menu {
+        margin-bottom: 35.7px;
+        
+}
+
+.item-nav-menu {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #212121;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover {
+        color: #2196F3;
+    }
+}
+
+.list-portfolio-menu {
+    margin-bottom: 32px;
+}
 
 .list-contact-menu {}
 
-.bottom-menu {}
+.menu-contacts {
+    margin-bottom: 64px;
+}
 
-.menu-contacts {}
+.menu-contacts>li{
+        font-family: 'Roboto';
+        font-style: normal;
+        margin-bottom: 32px;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+}
 
-.mail-menu {}
+.mail-menu {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+    
+        color: #757575;
+}
 
-.tel-menu {}
+.tel-menu {
+    color: #2196F3;
+}
 
-.menu-soc {}
+.menu-soc {
+    display: flex;
+    text-align: center;
+    
+}
+.menu-soc>li{
+        padding-right: 10px;
+        border-right-width: 1px;
+        border-right-style: solid;
+        color: rgba(33, 33, 33, .2);
+        margin-right: 10px;
+}
+.none{
+    border: #ffffff;
+}
 
-.inst-mob {}
+.inst-mob {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    
+}
 
-.tw-mob {}
+.tw-mob {
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #2196F3;
+}
 
-.facebook-mob {}
+.facebook-mob {
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #2196F3;
+}
 
-.in-mob {}
+.in-mob {
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #2196F3;
+}
