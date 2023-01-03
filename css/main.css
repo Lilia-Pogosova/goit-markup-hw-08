@@ -85,7 +85,7 @@ ul li {
 .header {
   border-bottom: 1px solid #ECECEC;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .header {
     height: 60px;
   }
@@ -115,7 +115,7 @@ ul li {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .conteiner-header {
     max-width: 450px;
   }
@@ -142,7 +142,7 @@ ul li {
   line-height: 31px;
   margin-right: 85px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .logo-header {
     padding: 16px;
   }
@@ -166,7 +166,7 @@ ul li {
   color: black;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .menu-open {
     display: block;
     background-color: #ffffff;
@@ -356,7 +356,7 @@ ul li {
   cursor: pointer;
   margin-right: 315px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .nav {
     display: none;
   }
@@ -485,7 +485,7 @@ ul li {
   fill: #2196F3;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .header-icon {
     list-style: none;
     display: -webkit-box;
@@ -568,7 +568,7 @@ ul li {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .title {
     max-width: 480px;
     max-height: 400px;
@@ -588,7 +588,7 @@ ul li {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .title-site {
     max-width: 360px;
     margin: 0 auto;
@@ -642,7 +642,7 @@ ul li {
   width: 100%;
   padding: 0 15px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .conteiner-title {
     max-width: 450px;
   }
@@ -663,7 +663,7 @@ ul li {
   width: 100%;
   padding: 0 15px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .conteiner {
     max-width: 450px;
     position: relative;
@@ -750,7 +750,7 @@ ul li {
 .qualites-item {
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .qualites-item {
     max-width: 100%;
   }
@@ -814,7 +814,7 @@ ul li {
   padding-bottom: 94px;
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .about-company {
     display: none;
   }
@@ -916,7 +916,7 @@ ul li {
 .command-item {
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .command-item {
     width: 450px;
     text-align: center;
@@ -1087,7 +1087,7 @@ ul li {
 .klients-link:hover, .klients-link:focus {
   border: 1px solid #2196F3;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .klients-link {
     width: 190px;
   }
@@ -1121,7 +1121,7 @@ ul li {
   background: #2F303A;
   display: block;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer {
     padding-bottom: 120px;
   }
@@ -1131,7 +1131,7 @@ ul li {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .conteiner-footer {
     max-width: 480px;
     display: -webkit-box;
@@ -1179,7 +1179,7 @@ ul li {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer-loc {
     text-align: center;
     margin-bottom: 60px;
@@ -1229,7 +1229,7 @@ ul li {
   display: inline-block;
   margin-right: 93px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer-icon {
     margin-right: 15px;
     margin-bottom: 60px;
@@ -1258,7 +1258,7 @@ ul li {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer-txt {
     text-align: center;
   }
@@ -1315,7 +1315,7 @@ ul li {
 .footer-form {
   display: inline-block;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1363,7 +1363,7 @@ ul li {
   position: relative;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .form-mail {
     width: 450px;
   }
@@ -1378,7 +1378,7 @@ ul li {
   height: 50px;
   position: absolute;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-form-button {
     top: 100%;
     left: 28%;
@@ -1578,7 +1578,7 @@ ul.buttons > li {
   border-radius: 4px;
   padding: 40px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1668,7 +1668,7 @@ label {
 .input-l:hover, .input-l:focus {
   border: 1px solid #2196F3;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .input-l {
     margin-bottom: 10px;
   }
@@ -1692,7 +1692,7 @@ label {
   margin-bottom: 30px;
   margin-right: 12px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .modal-conditions {
     margin-right: 0px;
   }
@@ -1712,7 +1712,7 @@ label {
   letter-spacing: 0.03em;
   color: #757575;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .modal-form-txt {
     font-size: 12px;
     line-height: 14px;
@@ -1737,7 +1737,7 @@ label {
   color: #2196F3;
   margin-left: 5px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .conditions {
     font-size: 12px;
     line-height: 14px;
@@ -1794,7 +1794,7 @@ label {
 .checkbox:checked + .check__box {
   background-image: url(../images/icon_check.svg);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .check__box {
     margin-top: 0px;
   }
@@ -1829,7 +1829,7 @@ label {
 .button-modal:hover, .button-modal:focus {
   background: #188CE8;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .button-modal {
     margin: 0 125px;
   }
