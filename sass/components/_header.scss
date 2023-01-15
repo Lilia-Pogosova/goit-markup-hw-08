@@ -1,20 +1,24 @@
 .header {   
     border-bottom: 1px solid #ECECEC;
     
-@media screen and (min-width: 320px) {
-
-height: 60px;
-    }
-
-    @media screen and (min-width: 768px) {
-height: 80px;
-    }
-
-    @media screen and (min-width: 1200px) {
-padding-top: 15px;
-height: 80px;
-    }
 }
+
+.header-centr{
+    @media screen and (min-width: 320px) {
+            margin: 0 auto;
+    
+    
+        }
+    
+        @media screen and (min-width: 768px) {
+            margin: 0 auto;
+    
+        }
+    
+        @media screen and (min-width: 1200px) {
+
+            margin: 0 auto;
+}}
 
 .conteiner-header {
     
@@ -28,19 +32,23 @@ justify-content: space-between;
 
     @media screen and (min-width: 320px) {
             max-width: 450px;
+            margin: 0 auto;
+                
     
         }
     
         @media screen and (min-width: 768px) {
     
             max-width: 738px;
+            margin: 0 auto;
+                
         }
     
         @media screen and (min-width: 1200px) {
             max-width: 1200px;
             margin: 0 auto;
             padding-left: 15px;
-                padding-right: 15px;
+            padding-right: 15px;
     
         }
     
@@ -54,15 +62,14 @@ justify-content: space-between;
     font-size: 26px;
     line-height: 31px;
     margin-right: 85px;
+    padding: 16px 0;
     
-    @media screen and (min-width: 320px) {
-            padding: 16px;
     
-        }
                 @media screen and (min-width: 768px) {
                     margin-right: 85px;
                     font-size: 24px;
                     line-height: 28px;
+                    
                 }
                                 @media screen and (min-width: 1200px) {
                 
@@ -135,18 +142,8 @@ justify-content: space-between;
         }
 }
 
-.conteiner-mob {
-        
-}
-
-
-
 .top-menu {
     margin-bottom: 302px;
-    
-}
-
-.menu-nav {
     
 }
 
@@ -171,13 +168,15 @@ justify-content: space-between;
 &:hover {
         color: #2196F3;
     }
+&:active{
+    color: #2196F3;;
+}
 }
 
 .list-portfolio-menu {
     margin-bottom: 32px;
 }
 
-.list-contact-menu {}
 
 .menu-contacts {
     margin-bottom: 64px;

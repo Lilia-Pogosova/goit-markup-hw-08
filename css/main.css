@@ -85,20 +85,20 @@ ul li {
 .header {
   border-bottom: 1px solid #ECECEC;
 }
+
 @media screen and (min-width: 320px) {
-  .header {
-    height: 60px;
+  .header-centr {
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
-  .header {
-    height: 80px;
+  .header-centr {
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 15px;
-    height: 80px;
+  .header-centr {
+    margin: 0 auto;
   }
 }
 
@@ -118,11 +118,13 @@ ul li {
 @media screen and (min-width: 320px) {
   .conteiner-header {
     max-width: 450px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
   .conteiner-header {
     max-width: 738px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -141,11 +143,7 @@ ul li {
   font-size: 26px;
   line-height: 31px;
   margin-right: 85px;
-}
-@media screen and (min-width: 320px) {
-  .logo-header {
-    padding: 16px;
-  }
+  padding: 16px 0;
 }
 @media screen and (min-width: 768px) {
   .logo-header {
@@ -246,6 +244,9 @@ ul li {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-nav-menu:hover {
+  color: #2196F3;
+}
+.item-nav-menu:active {
   color: #2196F3;
 }
 
@@ -378,7 +379,8 @@ ul li {
   margin-right: 50px;
 }
 
-.nav > li > a {
+.item-nav {
+  display: block;
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -391,10 +393,37 @@ ul li {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   position: relative;
 }
-.nav > li > a:hover {
+.item-nav:hover {
+  color: #2196F3;
+}
+.item-nav:active {
+  color: #2196F3;
+}
+
+.item-nav-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+}
+.item-nav-list:hover {
+  color: #2196F3;
+}
+.item-nav-list:active {
   color: #2196F3;
 }
 
@@ -410,12 +439,12 @@ ul li {
 }
 @media screen and (min-width: 768px) {
   .item-nav::after {
-    bottom: -8px;
+    bottom: -2px;
   }
 }
 @media screen and (min-width: 1200px) {
   .item-nav::after {
-    bottom: -1px;
+    bottom: -2px;
   }
 }
 
@@ -426,7 +455,6 @@ ul li {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,6 +498,12 @@ ul li {
 .mail:hover .mail-icon, .mail:focus .mail-icon {
   fill: #2196F3;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .mail-icon {
+    width: 14px;
+    height: 10px;
+  }
+}
 
 .tel-icon {
   margin-right: 10px;
@@ -483,6 +517,12 @@ ul li {
 }
 .tel:hover .tel-icon, .tel:focus .tel-icon {
   fill: #2196F3;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .tel-icon {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -519,10 +559,16 @@ ul li {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.header-icon > li {
+  margin-right: 30px;
 }
 
 .tel {
@@ -562,7 +608,7 @@ ul li {
 }
 
 .title {
-  padding: 118px 0 200px 0;
+  padding: 118px 0 118px 0;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_bg.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_bg.jpg);
   background-repeat: no-repeat;
@@ -570,20 +616,20 @@ ul li {
 }
 @media screen and (min-width: 320px) {
   .title {
-    max-width: 480px;
-    max-height: 400px;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   .title {
-    max-width: 768px;
-    max-height: 400px;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .title {
     max-width: 100%;
-    max-height: 600px;
+    max-height: 100%;
     padding: 200px 0 200px 0;
   }
 }
@@ -645,10 +691,12 @@ ul li {
 @media screen and (min-width: 320px) {
   .conteiner-title {
     max-width: 450px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
   .conteiner-title {
+    margin: 0 auto;
     max-width: 738px;
   }
 }
@@ -682,7 +730,6 @@ ul li {
 }
 
 .button {
-  display: block;
   margin: 0 auto;
   background: #2196F3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -733,6 +780,12 @@ ul li {
       align-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .qualites {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .qualites-list {
@@ -851,10 +904,11 @@ ul li {
 
 .company-img-label {
   position: relative;
+  margin-right: 30px;
 }
 
 .image-company {
-  margin-right: 30px;
+  max-width: 370px;
 }
 
 .label {
@@ -882,7 +936,7 @@ ul li {
   padding-bottom: 60px;
   background: #F5F4FA;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .command {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1019,6 +1073,12 @@ ul li {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .klients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .klients-title {
   font-style: normal;
@@ -1119,11 +1179,10 @@ ul li {
 .footer {
   padding-top: 60px;
   background: #2F303A;
-  display: block;
 }
 @media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1195,6 +1254,7 @@ ul li {
 @media screen and (min-width: 1200px) {
   .footer-loc {
     margin-right: 70px;
+    text-align: start;
   }
 }
 
@@ -1229,7 +1289,7 @@ ul li {
   display: inline-block;
   margin-right: 93px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-icon {
     margin-right: 15px;
     margin-bottom: 60px;
@@ -1258,7 +1318,7 @@ ul li {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .footer-txt {
     text-align: center;
   }
@@ -1337,6 +1397,45 @@ ul li {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .form-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer-form-txt {
   margin-bottom: 20px;
   font-family: "Roboto";
@@ -1361,11 +1460,11 @@ ul li {
   padding-left: 16px;
   margin-right: 11px;
   position: relative;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 320px) and (max-width: 1199px) {
   .form-mail {
     width: 450px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1376,7 +1475,15 @@ ul li {
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-form-button {
@@ -1394,12 +1501,6 @@ ul li {
   letter-spacing: 0.06em;
   color: #FFFFFF;
   margin-right: 10px;
-  margin-left: -10px;
-}
-
-.footer-form-icon {
-  position: absolute;
-  top: 13px;
 }
 
 .main-buttons {
@@ -1452,8 +1553,6 @@ ul.buttons > li {
 }
 
 .portfolio-content {
-  position: relative;
-  width: 1200px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;

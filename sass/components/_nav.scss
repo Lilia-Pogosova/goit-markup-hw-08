@@ -32,7 +32,8 @@ margin-right: 290px;}
 
 
 
-.nav>li>a {
+.item-nav{
+    display: block;
     font-family: inherit;
     font-weight: 500;
     font-size: 14px;
@@ -42,13 +43,38 @@ margin-right: 290px;}
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    padding-bottom: 25px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     position: relative;
 
     &:hover {
         color: #2196F3;
     }
+    
+    &:active{
+        color: #2196F3;
+    }
        
+}
+.item-nav-list{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #212121;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        padding-top: 32px;
+        padding-bottom: 32px;
+        position: relative;
+    
+        &:hover {
+            color: #2196F3;
+        }
+                &:active {
+                    color: #2196F3;
+                }
 }
 
 
@@ -67,12 +93,11 @@ margin-right: 290px;}
     
 
     @media screen and (min-width: 768px) {
-       
-bottom: -8px;
+    bottom: -2px;
     }
 
     @media screen and (min-width: 1200px) {
-bottom: -1px;
+    bottom: -2px;
     }
 }
 
@@ -85,7 +110,6 @@ bottom: -1px;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: #757575;
-    margin-right: 30px;
     display: flex;
     align-items: center;
     transition-property: color;
@@ -130,7 +154,12 @@ bottom: -1px;
         fill: #2196F3;
 
     }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+        width: 14px;
+        height: 10px;
+        }
 
+       
 }
 
 .tel-icon {
@@ -145,13 +174,13 @@ bottom: -1px;
         fill: #2196F3;
 
     }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            width: 10px;
+            height: 14px;
+        }
 
 }
 
-.header-information{
-    
-
-}
 
 .header-icon {
       
@@ -177,12 +206,15 @@ bottom: -1px;
                     display: -webkit-box;
                     flex-direction: row;
                     margin-left: auto;
-                    
+                    padding-top: 32px;
+                        padding-bottom: 32px;
                     align-items: center;
         }
 
 }
-
+.header-icon>li{
+    margin-right: 30px;
+}
 
 
 .tel {

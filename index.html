@@ -28,11 +28,11 @@
 
             <ul class="nav">
                 <li class="list-studio"><a href="./index.html" class="item-nav">Студія</a></li>
-                <li class="list-portfolio"><a href="./portfolio.html">Портфоліо</a></li>
-                <li class="list-contact"><a href="/">Контакти</a></li>
+                <li class="list-portfolio"><a href="./portfolio.html" class="item-nav-list">Портфоліо</a></li>
+                <li class="list-contact"><a href="/" class="item-nav-list">Контакти</a></li>
             </ul>
 
-            <div class="header-information">
+            <div class="header-information header-centr">
               <ul class="header-icon">
                 
                 <li>
@@ -74,18 +74,18 @@
     <!-- Main content -->
 
     <main>
-      <section class="title">
+      <section class="title header-centr">
         <div class="conteiner-title">
                 <h1 class="title-site">Ефективні рішення для вашого бізнесу</h1>
             
             <!-------------- MODAL btn------------>
-                <button data-modal-open class="button " type="button"><span class="button-txt">Замовити послугу</span></button>
+                <button data-modal-open class="button button-txt" type="button">Замовити послугу</button>
                 
         </div>
         </section>
         <!--Особливості-->
         <section class="qualites">
-          <div class="conteiner">
+          <div class="conteiner header-centr">
             <ul class="qualites-list">
                 <li class="qualites-item">
                   <div class="qualites-icon-warning">
@@ -130,31 +130,31 @@
 
         <!-- Чим займаємося-->
         <section class="about-company">
-              <div class="conteiner">
+              <div class="conteiner header-centr">
                   <h2 class="company-title">Чим ми займаємося</h2>
 
-                  <div class="company-img">
-                    <div class="company-img-label">
+                  <ul class="company-img">
+                    <li class="company-img-label">
                       <img class="image-company" src="images/img_box1.jpg" alt="box1" width="370" height="294" />
                         <div class="label">
                           <p class="label-txt">Декстопні додатки</p>
                         </div>
-                    </div>
+                    </li>
                       
-                    <div class="company-img-label">
+                    <li class="company-img-label">
                       <img class="image-company" src="images/img_box2.jpg" alt="box2" width="370" height="294" />
                         <div class="label">
                           <p class="label-txt">Мобільні додатки</p>
                         </div>
-                    </div>
+                    </li>
                       
-                    <div class="company-img-label">
-                      <img src="images/img_box3.jpg" alt="box3" width="370" height="294" />
+                    <li class="company-img-label">
+                      <img class="image-company" src="images/img_box3.jpg" alt="box3" width="370" height="294" />
                         <div class="label">
                           <p class="label-txt">Дизайнерські рішення</p>
                         </div>
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
                 </div>
 
             </section>
@@ -163,7 +163,7 @@
         <!-- Наша команда -->
     <section class="command">
           
-            <div class="conteiner">
+            <div class="conteiner header-centr">
             
               <h2 class="command-title">Наша команда</h2>
 
@@ -380,7 +380,7 @@
     </section>
 
     <section class="klients">
-      <div class="conteiner">
+      <div class="conteiner header-centr">
         <h2 class="klients-title">Постійні клієнти</h2>
         <ul class="klients-list">
           <li class="klients-item">
@@ -435,7 +435,7 @@
     <footer class="footer">
         <!-- Підвал -->
 
-      <div class="conteiner-footer">
+      <div class="conteiner-footer header-centr">
         <div class="footer-loc">
             <a class="logo-block-footer" href="#">Web<span class="logo-type-footer">Studio</span></a>
 
@@ -495,7 +495,7 @@
 
             <div class="footer-form">
               <p class="footer-form-txt">Підпишіться на розсилку</p>
-              <form>
+              <form class="form-flex">
                   <input class="form-mail" type="email" name="E-mail" id="E-mail" placeholder="E-mail" aria-label="E-mail" />
                   
                   <button class="footer-form-button" type="submit"><span class="footer-form-button-txt">Підписатися</span>
@@ -510,7 +510,7 @@
     </footer>
 
     <!-- mob -->
-            <div class="mob-menu is-hidden" data-menu>
+            <div class="mob-menu is-hidden header-centr" data-menu>
               <button type="button" class="menu-close" data-menu-close>
                 <svg class="menu-close-icon" width="40" height="40">
                   <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
@@ -548,7 +548,7 @@
     
     <!-- MODAL -->
     
-    <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden header-centr">
       <div class="modal">
     
         <button data-modal-close class="btn-close">
