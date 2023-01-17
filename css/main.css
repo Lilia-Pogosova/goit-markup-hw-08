@@ -164,6 +164,16 @@ ul li {
   color: black;
 }
 
+.header-information {
+  position: absolute;
+  right: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .header-information {
+    position: relative;
+  }
+}
+
 @media screen and (min-width: 320px) {
   .menu-open {
     display: block;
@@ -192,6 +202,16 @@ ul li {
   top: 0;
   background-color: #fff;
   padding-left: 40px;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-menu {
+    display: none;
+  }
 }
 
 .is-hidden {
@@ -250,6 +270,10 @@ ul li {
   color: #2196F3;
 }
 
+.current-menu {
+  color: #2196F3;
+}
+
 .list-portfolio-menu {
   margin-bottom: 32px;
 }
@@ -287,6 +311,7 @@ ul li {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  word-break: break-all;
 }
 
 .menu-soc > li {
@@ -365,7 +390,6 @@ ul li {
 @media screen and (min-width: 768px) {
   .nav {
     display: -webkit-box;
-    margin-right: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -383,10 +407,10 @@ ul li {
   display: block;
   font-family: inherit;
   font-weight: 500;
+  color: #212121;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -427,24 +451,29 @@ ul li {
   color: #2196F3;
 }
 
-.item-nav::after {
+.current {
+  color: #2196F3;
+}
+
+.current::after {
   position: absolute;
   content: "";
   display: block;
   width: 100%;
   height: 4px;
   background-color: #2196F3;
+  color: #2196F3;
   border-radius: 2px;
   left: 0;
 }
 @media screen and (min-width: 768px) {
-  .item-nav::after {
+  .current::after {
     bottom: -2px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .item-nav::after {
-    bottom: -2px;
+  .current::after {
+    bottom: -1px;
   }
 }
 
@@ -545,8 +574,6 @@ ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 21px;
-    padding-bottom: 21px;
     gap: 10px;
   }
 }
@@ -559,8 +586,6 @@ ul li {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -613,6 +638,7 @@ ul li {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1600px;
 }
 @media screen and (min-width: 320px) {
   .title {
@@ -1105,7 +1131,7 @@ ul li {
   gap: 30px;
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .klients-list {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
@@ -1178,6 +1204,7 @@ ul li {
 
 .footer {
   padding-top: 60px;
+  padding-bottom: 60px;
   background: #2F303A;
 }
 @media screen and (min-width: 320px) and (max-width: 1199px) {
@@ -1218,9 +1245,8 @@ ul li {
         -ms-flex-align: baseline;
             align-items: baseline;
     text-align: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1247,7 +1273,6 @@ ul li {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-loc {
     text-align: center;
-    margin-left: 76px;
     margin-bottom: 60px;
   }
 }
@@ -1255,6 +1280,7 @@ ul li {
   .footer-loc {
     margin-right: 70px;
     text-align: start;
+    margin-bottom: 0px;
   }
 }
 
@@ -1287,7 +1313,6 @@ ul li {
 
 .footer-icon {
   display: inline-block;
-  margin-right: 93px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-icon {
@@ -1295,11 +1320,12 @@ ul li {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-icon {
-    margin-right: 100px;
+    margin-right: 93px;
   }
 }
+
 .footer-icon-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1576,7 +1602,7 @@ ul.buttons > li {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-content > li:hover .product-overlay {
+.port-link:hover .product-overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }

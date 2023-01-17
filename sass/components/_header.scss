@@ -85,6 +85,14 @@ justify-content: space-between;
     color: black
 }
 
+.header-information{
+    position: absolute;
+    right: 0px;
+    @media screen and (min-width: 1200px) {
+    position: relative;
+        }
+}
+
 
 // mob-menu--------------------------//
 
@@ -105,10 +113,7 @@ justify-content: space-between;
 }
 .mob-menu {
     display: block;
-
-    // transform: translate(100%, 100%);
-       
-            position: relative;
+    position: relative;
             padding-top: 48px;
             padding-bottom: 48px;
             width: 100vw;
@@ -117,6 +122,13 @@ justify-content: space-between;
             top: 0;
             background-color: #fff;
             padding-left: 40px;
+            @media screen and (min-width: 768px) {
+                    display: none;
+                }
+            
+                @media screen and (min-width: 1200px) {
+                    display: none;
+                }
     }
 
 
@@ -173,6 +185,10 @@ justify-content: space-between;
 }
 }
 
+.current-menu{
+    color: #2196F3;
+}
+
 .list-portfolio-menu {
     margin-bottom: 32px;
 }
@@ -210,6 +226,7 @@ justify-content: space-between;
 .menu-soc {
     display: flex;
     text-align: center;
+    word-break: break-all
     
 }
 .menu-soc>li{
