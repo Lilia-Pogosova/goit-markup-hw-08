@@ -4,23 +4,42 @@
     flex-wrap: wrap;
     gap: 30px;
 
-        >li {
-            transition-property: box-shadow;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
+        // >li {
+        //     transition-property: box-shadow;
+        //     transition-duration: 250ms;
+        //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        // }
     
-        >li:hover {
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-        }
+        // >li:hover,
+        //  li:focus{
+        //     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        // }
+
 
 }
+.port-link{
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover,
+        &:focus{
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        
+            }
+}
+
+
 
 
 
 .port-link:hover .product-overlay {
     transform: translateY(0);
+    
 }
+
+
+
 
 .portfolio-content-link {
     position: relative;
