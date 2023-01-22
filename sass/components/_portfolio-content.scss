@@ -3,6 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    display: flex;
+
+
 
         // >li {
         //     transition-property: box-shadow;
@@ -18,6 +21,7 @@
 
 }
 .port-link{
+    display: block;
         transition-property: box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,7 +37,7 @@
 
 
 
-.port-link:hover .product-overlay {
+.port-link:hover .product-overlay{
     transform: translateY(0);
     
 }

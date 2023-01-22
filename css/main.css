@@ -1594,9 +1594,11 @@ ul.buttons > li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  display: flex;
 }
 
 .port-link {
+  display: block;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
